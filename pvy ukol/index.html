@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li><a href="#Domu">Domů</a></li>
+      <li><a href="#TypyWebApp">Typy webových aplikací</a></li>
+      <li><a href="#FazeNavrhu">Fáze návrhu webové aplikace</a></li>
+      <li><a href="#BezpRizika">Bezpečnostní rizika webových aplikací</a></li>
+      <li><a href="#RedakcniSys">Redakční systémy a e-commerce</a></li>
+      <li><a href="#Slovnik">Slovník Pojmů</a></li>
+    </ul>
+    <h1 id="Domu" class="text-center">WEBOVÉ APLIKACE</h1>
+    <br>
+    <br>
+  </header>
+  <main>
+    <div class="row">
+      <div class="column">
+        <h2 id="TypyWebApp">Typy webových aplikací</h2>
+
+        <p>K implementaci API lze přistupovat několika způsoby. Nejstarším prostředkem zůstává takzvaný Simple Object
+          Access Protocol,
+          zkráceně SOAP, určený pro volání procedur za využití XML. Jeho cílem je snazší sdílení informací různých
+          aplikací, běžících
+          v různých prostředích nebo v různých jazycích. Jedná se tedy o nástroj odstraňující bariéry mezi odlišnými
+          platformami.
+          Dnes je využíván převážně bankami a pojišťovnami; v ČR tento typ API využívá systém EET. ​
+          V širším měřítku je ovšem vytlačován REST API (někdy RESTfull API). REST API je, na rozdíl od SOAP,
+          architektura fungující
+          na principu klient-server, kdy veškerá uživatelská data zůstávají uložena na straně klienta. Díky tomu by
+          nemělo dojít k
+          úniku citlivých dat. Jedná se o pravděpodobně nejpoužívanější řešení určené k tvorbě aplikačních rozhraní. Ke
+          své funkci
+          využívá HTTP protokol.​ Následníkem REST API je GRAPHQL, původně vyvíjené Facebookem,
+          který ho také používá v rámci své sociální sítě. Časem se z něj stal open-source a může tak být
+          bezplatně využíván širokou veřejností. GRAPHQL je jazyk dotazů, který běží na straně serveru.
+          Umožňuje stahovat data z více zdrojů najednou, což znatelně ulehčuje práci programátorů.
+          Nabízí větší rychlost zpracování než REST API, má bohatší škálu využití, není závislý na
+          architektuře a lze ho implementovat i nad stávající REST API.</p>
+      </div>
+      <div class="column">
+        <h2 id="FazeNavrhu">Fáze návrhu webové aplikace</h2>
+        <ol>
+          <li> Strategie. Hledání kompromisu mezi potřebami uživatelů budoucí aplikace a zájmů tvůrců aplikace. Je třeba
+            zjistit a pochopit cílovou skupinu uživatelů, jejich způsob uvažování a zvyky, zohlednit je v návrhu
+            aplikace.</li>
+          <li> Specifikace požadavků. Na základě získaných informací jsou specifikovány všechny funkce a možnosti, jež
+            by
+            měla aplikace a její GUI pokrývat. Výsledkem by měl být dokument s popisem požadovaných funkcí a forem
+            obsahu.</li>
+          <li> Návrh struktury. V této fázi se řeší tzv. interakční design; pomocí Use Case diagramů (případu užití) se
+            zobrazují vazby mezi jednotlivými částmi aplikace a akce, které bude uživatel moci provádět, včetně možných
+            reakcí aplikace.​</li>
+          <li> Základní model a kostra. V této fázi se řeší tzv. informační design (jak prezentovat informace generované
+            aplikací, aby došlo k jejich správnému pochopení), interface design (výběru jednotlivých druhů GUI komponent
+            k
+            provedení určité činnosti) a design navigace (jak se budou v prostředí aplikace pohybovat uživatelé).
+            Celkový
+            pohled lze získat sdružením poznatků a vytvořit drátěný model uživatelského rozhraní - wireframe. Jeho cílem
+            je určit hlavní části aplikace a ilustrovat jejich přibližné rozmístění (schématické obrázky, v nichž jsou
+            potlačeny detaily vzhledu GUI komponent i obsahu).​</li>
+          <li> Vizuální vzhled. Webdesignéři připravují vizuální vzhled jednotlivých komponent stránky podle vytvořených
+            wireframů a storyboardů. Na základě grafického manuálu vznikají barevná schémata, která budou v aplikaci
+            použita, jsou vybírány typy písem a vytvářen graficky homogenní vzhled všech komponent.</li>
+          <li> Testování. Může probíhat v uzavřené skupině i v testovacím provozu aplikace pomocí speciálních
+            analytických
+            nástrojů pro web (analýzy návštěvnosti, teplotní mapy, sledování pohybů myši a kliknutí, nahrávání
+            uživatelské
+            aktivity atd.).</li>
+
+
+
+        </ol>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h2 id="BezpRizika">Bezpečnostní rizika webových aplikací</h2>
+        <h4>Cross-site scripting</h4>
+        <p>Cross-site scripting (XSS) je metoda narušení WWW stránek využitím bezpečnostních chyb ve skriptech
+          (především neošetřené vstupy). ​
+          Útočník díky těmto chybám v zabezpečení webové aplikace dokáže do stránek podstrčit svůj vlastní javascriptový
+          kód, což může využít buď pouze k poškození vzhledu stránky, jejímu znefunkčnění, získávání citlivých údajů
+          návštěvníků stránek nebo obcházení bezpečnostních prvků aplikace. ​
+          Často je též využíván při phishingu tak, že je skrze XSS zranitelnosti uživateli ukázán jiný obsah na jinak
+          důvěryhodné stránce.​
+          Obrana: ​
+          V textech zadávaných uživateli je třeba speciální znaky nahrazovat entitami, např.
+          < nahrazovat za &lt;, v java aplikacích nejlépe pomocí značky <c:out value="${hodnota}" />. ​
+
+          Kontrolovat URL od uživatele, která jdou do obrázků, odkazů a podobně, protože mohou začínat např. na
+          javascript:. Kvůli různým variacím a budoucím změnám je vhodné použít pro tuto kontrolu whitelist.
+        </p>
+        <h4>Cross-site request forgery</h4>
+        <p>Cross-site request forgery (XSRF) je pasivní útok, kdy útočník nachystá na nějakou stránku kód, který způsobí
+          vyvolání URL na nějakém jiném serveru, kde uživatel může být stále přihlášen.​
+          Obrana: ​
+          Důležité akce (třeba převod peněz) je třeba potvrzovat, do přihlašovacích formulářů je třeba přidávat náhodně
+          generované hodnoty. ​
+          V administrační části internetových aplikací, pro akce, které mažou určité záznamy nebo je jiným způsobem
+          mění, se doporučuje zásadně používat HTTP metodu POST. ​
+          Používat autorizační token – náhodně vygenerovaný řetězec pro danou akci a pro aktuálního uživatele. </p>
+        <h4>Clickjacking</h4>
+        <p>Clickjacking. Cizí stránka, na kterou je veden útok, je zobrazena na útočníkově stránce v iframe tak, že je
+          vidět jen část bez bližšího kontextu. (Je možné využít i opacity v CSS.) Uživatel je naveden ke kliknutí na
+          tuto část stránky, čímž provede nějakou akci, například hlasování v anketě.​
+          Obrana: ​
+          Lze se bránit hlavičkou X-Frame-Options, která je v některých prohlížečích podporována, a Javascriptem.
+          Princip spočívá v zabránění zobrazení stránky v rámci.</p>
+        <h4>Session hijacking</h4>
+        <p> Session hijacking je útok, při kterém útočník odposlechne cookie použité pro označení úspěšně
+          autentizovaného
+          uživatele, a začne se za něj vydávat.​
+
+          Obrana: ​
+
+          Session cookies musí mít označení secure, tedy mohou být poslána jen přes šifrovaná SSL spojení. ​
+
+          V případě předávání session ID přes URL je obrana komplikovanější, vyžaduje zabránit úniku URL přes referer
+          (odkazy, obrázky, ...) a Session fixation.​
+        </p>
+        <h4>Phishing</h4>
+        <p>Phishing je aktivní útok využívající sociální inženýrství, při kterém útočník vydává svoje vlastní webové
+          stránky za oficiální stránky instituce / aplikace, aby získal přihlašovací údaje uživatele.​
+
+          Obrana: ​
+
+          Vzdělávání uživatelů v kontrole autentizace serveru, použití Extended Validation SSL Certificates.</p>
+        <h4>SQL Injection</h4>
+        <p>SQL Injection je technika napadení databázové vrstvy programu vsunutím (odtud „injection“) kódu přes
+          neošetřený vstup a vykonání vlastního pozměněného SQL dotazu.​
+
+          Obrana: ​
+
+          Důsledné používání tzv. PreparedStatement a jeho setXXX() metod pro nastavování hodnot. ​
+
+          Tam kde se nejedná o hodnotu (třeba název sloupce v ORDER BY), zkontrolovat vstup regulárním výrazem na
+          očekávané hodnoty.</p>
+      </div>
+      <div class="column">
+        <h2 id="RedakcniSys">Redakční systémy a e-commerce</h2>
+        <p>Mezi populární a velmi rozšířené CMS patří Wordpress, Joomla! a Drupal. ​
+          WordPress je open source redakční systém napsaný v jazyce PHP a využívající databázový systém MySQL. Původně
+          byl vyvinut se záměrem poskytnout platformu pro co nejpohodlnější zprovoznění blogovacího systému, ale díky
+          rozsáhlé komunitě programátorů a existenci mnoha rozšíření je dnes základem nejrůznějších webových projektů.
+          Jednou z výhod Wordpressu je snadná instalace jádra systému, po níž může následovat instalace různých doplňků
+          (pluginů) i šablon grafického vzhledu (témat). ​
+          Redakční systém je spravován prostřednictvím administrační části aplikace (back-end), do níž mají přístup
+          uživatelé podle nadefinovaných oprávnění. ​
+          V administraci lze měnit nastavení systému, instalovat i přizpůsobovat pluginy i témata, aktualizací,
+          instalace a přizpůsobení témat), definovat strukturu webu (provádět změny menu, vytvářet kategorie i tzv.
+          štítky), editovat a publikovat příspěvky (články v podobě aktualit) nebo statické stránky, vytvářet galerie
+          obrázků i multimédií, sledovat statistiky přístupů a provádět řadu dalších operací. ​
+          Wordpress kromě jiného podporuje využití RSS kanálů a metod Trackback i Pingback (způsoby jak informovat
+          určitou stránku, že je na ni z jiné stránky odkazováno; bohužel rovněž časté nástroje spammerů).​
+          Nevýhodou Wordpressu, ale i jiných rozšířených CMS je množství útoků, které využívají slabých míst těchto
+          systémů k jejich ovládnutí, poškození nebo i zneužití k jiné kybernetické kriminalitě. Při nasazení
+          jakéhokoliv redakčního systému je proto nezbytné důsledně dodržovat všechny bezpečnostní zásady, zejména
+          pravidelně aktualizovat jádro systému, ale i pluginy.
+
+          Pojem e-commerce je používán k označení různých obchodních transakcí realizovaných prostřednictvím Internetu a
+          dalších elektronických prostředků. Podle cílové skupiny rozlišujeme několik typů e-commerce:​
+          B-2-B (Business to Business, obchodník obchodníkovi). Většinou fungují na principu elektronické výměny dat
+          (objednávek, faktur). Vyšším stupněm jsou internetová tržiště pro zprostředkování obchodů. Nejvyspělejší
+          variantou jsou komunikační a distribuční sítě, kde dochází k transakcím v reálném čase, včetně finančních a
+          logistických operací. ​
+          B-2-C (Business to Consumer, obchodník zákazníkovi). Na základní úrovni je to webová stránka plnící funkci
+          elektronického katalogu, doplněná případně o interaktivní formuláře s možností zpětné vazby. Nejvyšší úrovní
+          je internetový obchod s možností online plateb. ​
+          C-2-B (Consumer to Business, zákazník obchodníkovi). Obchodní transakci iniciuje zákazník, když zadává
+          požadavek na určitý produkt za určitou cenu. Obchodní partner sdělí, zda je ochoten požadavek akceptovat
+          (např. poptávka na pokoj v penzionu).​
+          C-2-C (Consumer to Consumer, zákazník zákazníkovi). Výměnný obchod mezi lidmi bez prostředníka - internetová
+          spotřebitelská burza či elektronická aukce (např. použitého zboží, sběratelských předmětů apod.).
+        </p>
+      </div>
+    </div>
+    <div class="text-center">
+      <h2 id="Slovnik" >Slovník pojmů</h2>
+      <table style="width:100%">
+       
+        <tr>
+          <td>API </td>
+          <td>Application Programming Interface) označuje v informatice rozhraní pro programování aplikací.</td>
+        </tr>
+        <tr>
+          <td>HTTP </td>
+          <td>(Hypertext Transfer Protocol) je internetový protokol určený pro komunikaci s WWW servery. Slouží pro
+            přenos hypertextových dokumentů ve formátu HTML, XML, i jiných typů souborů. </td>
+        </tr>
+      </table>
+    </div>
+
+    </div>
+
+  </main>
+  <footer class="container-fluid bg-secondary p-3 text-center">
+    <p>&copy; 2020 - Filip Dušek</p>
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
