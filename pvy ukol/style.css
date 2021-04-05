@@ -161,4 +161,13 @@ main {
   * {
     font-family: KaushanScript-Regular;
   }
+  dd{
+    margin-left: 10px;
+  }
+  .mySlides {
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+  }
 
